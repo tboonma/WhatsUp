@@ -51,6 +51,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="56dp"
+        android:visibility="gone"
         app:cardBackgroundColor="?attr/colorSurfaceContainerHigh"
         app:cardCornerRadius="4dp"
         app:cardElevation="4dp"
@@ -76,17 +77,17 @@
                 android:id="@+id/LogInLb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Please Log-In"
                 android:textAlignment="center"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                tools:text="Please Log-In" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/usernameLb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                tools:text="Username:" />
+                android:text="Username:"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/usernameTxt"
@@ -100,8 +101,8 @@
                 android:id="@+id/pwdLb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                tools:text="Password:" />
+                android:text="Password:"
+                android:textSize="20sp" />
 
             <EditText
                 android:id="@+id/pwdTxt"
@@ -115,8 +116,9 @@
                 android:id="@+id/enterBtn"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                tools:text="Enter" />
+                android:layout_gravity="center_horizontal"
+                android:text="Enter"
+                android:textSize="20sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
