@@ -119,7 +119,6 @@ private suspend fun CameraPositionState.centerOnLocation(location: LatLng) = ani
 
 @Composable
 fun LocationCoordinateDisplay(lat: String, lon: String) {
-    println("Latitude: $lat, Longitude: $lon")
     ConstraintLayout (modifier = Modifier
         .fillMaxWidth(1f)
         .padding(all = 8.dp)) {
