@@ -1,6 +1,7 @@
 package org.classapp.whatsup
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.padding
@@ -40,6 +41,9 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        val i = intent
+        val username = i.getStringExtra("loginUsername")
+        Toast.makeText(this, "Welcome $username to WhatsUp!!", Toast.LENGTH_LONG).show()
     }
 }
 
